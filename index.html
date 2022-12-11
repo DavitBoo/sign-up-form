@@ -13,34 +13,49 @@
         <div class="left">
             <div class="bg-image">
                 <div class="title-box">
-                    <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
+                    <img src="constellation.png" alt="">
                     <h1>davitboo</h1>
+                </div>
+                <div class="content-creators">
+                    <p>Photo by <a href="https://unsplash.com/es/@andyjh07?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Holmes</a> in <a href="https://unsplash.com/es/s/fotos/universe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
+                    <a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by tulpahn - Flaticon</a>
                 </div>
                
 
             </div>
-            <p>Photo by <a href="https://unsplash.com/es/@andyjh07?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Holmes</a> in <a href="https://unsplash.com/es/s/fotos/universe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p>
         </div>
         <div class="right">
             <div class="top-right">
-                <p>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <div class="paragraph">
+                    <p>This is a <strong>demo</strong> registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
             </div>
-            <form action="">
+            <div class="right-bottom">            
                 <h2>Let's do this!</h2>
                 <p>Fields marked with an asterisk (*) are required</p>
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="email" name="" id="">
-                <input type="tel" name="" id="">
-                <input type="password" name="" id="">
-                <input type="password" name="" id="">
-                <input type="submit" value="Create Account" class="btn">
-                
-                <p>Already have an account? Log in</p>
-            </form>
+                <form id="my-form" action="" >
+                    <fieldset>
+                        <input placeholder="first name" type="text" name="first-name" id="first-name">
+                        <input placeholder="last name" type="text" name="l-name" id="last-name">
+                        <input placeholder="e-mail" type="email" name="" id="email">
+                        <input placeholder="phone number" type="tel" name="" id="phone">
+                        <input placeholder="password" type="password" name="" id="password">
+                        <input placeholder="confirm password" type="password" name="" id="confrim-pass">
+                    </fieldset>
+                    <p class="error not-display">Lorem ipsum dolor sit.</p>
+                <input type="submit" value="Create Account" class="btn" id="btn-submit">
+                <p class=>Already have an account? <a href="#" class="login">Log in</a>
+                    
+                </form>
+                </p>
+            </div>
+            <footer class="footer">
+                <a href="https://github.com/DavitBoo"><img src="github.svg" alt=""></a>
+            </footer>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,17 +6,28 @@
     --pale-silver: #D4C5C7;
 }
 
-body{
+body,  h2, p{
     margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
+
 .container{
     display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+    }
+  }
 
 /*left side*/
 
@@ -27,8 +38,9 @@ body{
 }
 
 .bg-image{
+    position: relative;
     background-image: url("andy-holmes-LUpDjlJv4_c-unsplash.jpg");
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     top: 0;
     left: 0;
@@ -36,6 +48,32 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
+.content-creators{
+    position: absolute;
+    bottom: 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.content-creators a{
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-creators{
+        color: #dedede;
+        font-weight: normal;
+
+    }
+
+    .content-creators a{
+        color: #dedede;
+    }
+  }
+
+
 
 .title-box{
     background-color: rgba(0, 0, 0, 0.3);
@@ -49,8 +87,10 @@ body{
 }
 
 .title-box img{
+    margin-right: 15px;
     max-height: 10vh;
     max-width: 10vh;
+    filter: invert();
 }
 
 /*right side*/
@@ -58,10 +98,83 @@ body{
     flex: 67%;
 }
 
+.top-right{
+    background: #f4efef;
+    padding-bottom: 30px;
+}
+
+
+.top-right .paragraph{
+    padding: 20px 40px;
+    padding-right:calc((2rem + 30%));
+}
+
+@media only screen and (max-width: 600px) {
+    .top-right .paragraph{
+        padding: 20px 10px;
+        text-align: center;
+    }
+  }
+
+.top-right .paragraph p{
+    margin: 1rem auto;
+    font-size: 1.6rem;
+}
+
 
 
 
 /*form*/
+
+.right-bottom{
+    margin-top: 10px;
+    padding: 40px;
+}
+
+.right-bottom h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.right-bottom p{
+    color: var(--grullo);
+}
+ 
+fieldset {
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+  } 
+
+
+@media only screen and (max-width: 600px) {
+    fieldset {
+        grid-template-columns: repeat(1, 1fr);
+
+      } 
+}
+
+
+fieldset input{
+  border: none;
+  border-bottom: 1px solid var(--pale-silver);
+  padding: 10px 10px;
+  margin: 0;
+  width: 80%;
+  background: none;
+}
+
+fieldset input:focus {
+    border-bottom: 1px solid var(--green-bluen);
+    outline-width: 0;
+    box-shadow: 0px 1px 1px var(--grullo);
+}
+
+fieldset input:invalid{
+    border-bottom: 2px solid red;
+}
 
 .btn{
     background-color: white;
@@ -71,9 +184,54 @@ body{
     padding: .5rem 1rem;
     transition: all .3s;
     cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn {
+        width: 100%;
+
+      } 
 }
 
 .btn:hover{
     background-color: var(--green-bluen);
     color: #fff;
 }
+
+
+.login{
+    text-decoration: none;
+    color: var(--green-bluen);
+    font-weight: bold;
+}
+
+p.error{
+    color: rgb(178, 33, 33);
+    background-color: rgb(237, 126, 126);
+    padding: 5px;
+    margin: 0 0 30px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.not-display{
+    display: none;
+}
+
+/*footer*/
+.footer{
+    background: linear-gradient(0deg, var(--grullo) 0%, var(--pale-silver) 34%, rgba(255,255,255,1) 92%);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer img{
+    max-height: 45px;
+    transition: all .3s;
+}
+
+.footer img:hover{
+    transform: scale(1.2);
+}
+
