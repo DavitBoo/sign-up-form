@@ -34,15 +34,14 @@
             </div>
             <div class="right-bottom">            
                 <h2>Let's do this!</h2>
-                <p>Fields marked with an asterisk (*) are required</p>
                 <form id="my-form" action="" >
                     <fieldset>
                         <input placeholder="first name" type="text" name="first-name" id="first-name">
                         <input placeholder="last name" type="text" name="l-name" id="last-name">
-                        <input placeholder="e-mail" type="email" name="" id="email">
+                        <input placeholder="e-mail" type="email" name="" id="email" class="required">
                         <input placeholder="phone number" type="tel" name="" id="phone">
-                        <input placeholder="password" type="password" name="" id="password">
-                        <input placeholder="confirm password" type="password" name="" id="confrim-pass">
+                        <input placeholder="password" type="password" name="" id="password" class="required">
+                        <input placeholder="confirm password" type="password" name="" id="confrim-pass" class="required">
                     </fieldset>
                     <p class="error not-display">Lorem ipsum dolor sit.</p>
                 <input type="submit" value="Create Account" class="btn" id="btn-submit">

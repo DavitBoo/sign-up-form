@@ -176,6 +176,11 @@ fieldset input:invalid{
     border-bottom: 2px solid red;
 }
 
+.require:after {
+    content:" *asfdaaaaaaaaaaaaaaaaaaaaaaaa";
+    color: red;
+  }
+
 .btn{
     background-color: white;
     font-weight: 600;
