@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+:root{
+    --green-bluen: #1967B0;
+    --grullo: #B9A394;
+    --pale-silver: #D4C5C7;
+}
+
+body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.container{
+    display: flex;
+}
+
+/*left side*/
+
+.left{
+    position: relative;
+    flex: 33%;
+
+}
+
+.bg-image{
+    background-image: url("andy-holmes-LUpDjlJv4_c-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-box{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Kenia', cursive;
+    width: 100%;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+.title-box img{
+    max-height: 10vh;
+    max-width: 10vh;
+}
+
+/*right side*/
+.right{
+    flex: 67%;
+}
+
+
+
+
+/*form*/
+
+.btn{
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid var(--green-bluen);
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--green-bluen);
+    color: #fff;
+}
